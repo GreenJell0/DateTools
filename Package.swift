@@ -19,7 +19,7 @@ let package = Package(
     targets: [
         .target(name: "DateToolsSwift",
                 path: "DateToolsSwift/DateTools",
-                resources: [.copy("DateTools.bundle")],
+                resources: [.copy("DateTools.bundle"), .copy("PrivacyInfo.xcprivacy")],
                 swiftSettings: [.define("PACKAGE_MANAGER"),]
                 ),
         .testTarget(
